@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/EscapeRoomApp.unity
+- path: Assets/Scenes/MorseCodeGraph.unity
   isLoaded: 1
   isActive: 1
