@@ -29,14 +29,11 @@ public class ItemSpawner : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (tapPlace.Playing)  // Checks if the character has been placed and game has started
-        {
-            spawnTimer += Time.deltaTime;
+        spawnTimer += Time.deltaTime;
 
-            if (spawnTimer >= minSpawnDelay)
-            {
-                SpawnWeapon();
-            }
+        if (spawnTimer >= minSpawnDelay)
+        {
+            SpawnWeapon();
         }
     }
 

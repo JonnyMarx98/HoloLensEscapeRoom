@@ -36,7 +36,7 @@ namespace HoloToolkit.Unity.InputModule
         public void OnPlace()
         {
             Playing = false;
-            tapToPlace.Playing = false;
+            //tapToPlace.Playing = false;
             // Play sound/display text to let player know game is in place mode
         }
 
