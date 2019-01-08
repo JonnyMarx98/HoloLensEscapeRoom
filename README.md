@@ -8,8 +8,11 @@ This escape room puzzle will contain three different morse code messages, each r
 To complete the puzzle the player must enter the correct answer on the device in the middle of the room. The morse code messages will lead the player to the answer. 
 
 For the prototype the three morse code messages will be random words generated on https://www.randomwordgenerator.com/. 
+
 The audio message is - key
 
 The light message is - tree
 
 The dots and dashes message is - break
+
+The audio and light messages are shorter because they will be harder to translate and I do not want the puzzle being too difficult for players.
