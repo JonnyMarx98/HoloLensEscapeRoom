@@ -9,5 +9,7 @@ To complete the puzzle the player must enter the correct answer on the device in
 
 For the prototype the three morse code messages will be random words generated on https://www.randomwordgenerator.com/. 
 The audio message is - key
+
 The light message is - tree
+
 The dots and dashes message is - break
