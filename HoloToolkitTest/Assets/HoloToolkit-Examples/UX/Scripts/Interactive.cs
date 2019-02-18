@@ -522,5 +522,12 @@ namespace HoloToolkit.Examples.InteractiveElements
         {
             OnFocusExit();
         }
+
+        public void Dash()
+        {
+            print("dash");
+        }
     }
+
 }
+

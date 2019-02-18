@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Game.unity
-    guid: 0b8ddb81d0c1eba4ab2bb30b7540cf35
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/FloorGame.unity
     guid: c38c0c7e389d91e4d911140d8d83226a
+  - enabled: 1
+    path: Assets/Scenes/MorseCodeGraph.unity
+    guid: aa02c19dc8426384b90d404560d87aba

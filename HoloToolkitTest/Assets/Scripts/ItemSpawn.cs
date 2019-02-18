@@ -4,4 +4,8 @@ using UnityEngine;
 
 public class ItemSpawn : MonoBehaviour
 {
+    public void Dash()
+    {
+        Debug.Log("yes");
+    }
 }
