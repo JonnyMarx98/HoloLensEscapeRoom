@@ -262,6 +262,18 @@ namespace HoloToolkit.Examples.InteractiveElements
             }
             UpdateEffects();
 
+            if (ParentObject.name == "DashButton")
+            {
+                print("Dash");
+            }
+            if (ParentObject.name == "DotButton")
+            {
+                print("Dot");
+            }
+
+
+
+
             OnDownEvent.Invoke();
         }
 
