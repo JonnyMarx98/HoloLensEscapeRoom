@@ -7,6 +7,7 @@ TagManager:
   - Bullet
   - PickUp
   - UI
+  - MorseCode
   layers:
   - Default
   - TransparentFX
