@@ -22,6 +22,13 @@ namespace HoloToolkit.Examples.InteractiveElements
     public class Interactive : MonoBehaviour, IInputClickHandler, IFocusable, IInputHandler
     {
 
+        GameObject MorseCode;
+        MorseCodeTranslator morseCodeTranslator;
+
+       
+                  
+        
+
         public GameObject ParentObject;
 
         /// <summary>
@@ -120,6 +127,7 @@ namespace HoloToolkit.Examples.InteractiveElements
         /// </summary>
         protected virtual void Start()
         {
+            morseCodeTranslator = GameObject.FindGameObjectWithTag("MorseCode").GetComponent<MorseCodeTranslator>();
             if (Keyword != "")
             {
                 mKeywordArray = new string[1] { Keyword };
@@ -265,10 +273,22 @@ namespace HoloToolkit.Examples.InteractiveElements
             if (ParentObject.name == "DashButton")
             {
                 print("Dash");
+                morseCodeTranslator.Dash();
             }
             if (ParentObject.name == "DotButton")
             {
                 print("Dot");
+                morseCodeTranslator.Dot();
+            }
+            if (ParentObject.name == "NextLetterButton")
+            {
+                //print("Done");
+                morseCodeTranslator.NextLetter();
+            }
+            if (ParentObject.name == "SpaceButton")
+            {
+                //print("Done");
+                morseCodeTranslator.NextWord();
             }
 
 
