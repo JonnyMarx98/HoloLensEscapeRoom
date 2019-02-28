@@ -290,6 +290,11 @@ namespace HoloToolkit.Examples.InteractiveElements
                 //print("Done");
                 morseCodeTranslator.NextWord();
             }
+            if (ParentObject.name == "ClearButton")
+            {
+                //print("Done");
+                morseCodeTranslator.Clear();
+            }
 
 
 

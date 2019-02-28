@@ -58,6 +58,11 @@ public class MorseCodeTranslator : MonoBehaviour {
         MorseLetter = null;
     }
 
+    public void Clear()
+    {
+        morseText.text = null;
+    }
+
     public void DisplayText(GameObject prefab, string text)
     {
         textIns = Instantiate(prefab);
