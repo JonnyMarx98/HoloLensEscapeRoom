@@ -25,6 +25,9 @@ namespace HoloToolkit.Examples.InteractiveElements
         GameObject MorseCode;
         MorseCodeTranslator morseCodeTranslator;
 
+        public AudioClip clip;
+        public AudioSource audioSource;
+
        
                   
         
@@ -274,11 +277,13 @@ namespace HoloToolkit.Examples.InteractiveElements
             {
                 print("Dash");
                 morseCodeTranslator.Dash();
+                audioSource.Play();
             }
             if (ParentObject.name == "DotButton")
             {
                 print("Dot");
                 morseCodeTranslator.Dot();
+                audioSource.Play();
             }
             if (ParentObject.name == "NextLetterButton")
             {
