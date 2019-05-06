@@ -19,18 +19,8 @@ There is a build in the Finalbuild folder, however here are the instructions for
 
 
 ## The Puzzle
-This escape room puzzle will contain three different morse code messages, each represented differently. One message will be represented using dots and dashes printed on paper, one will be represented using light flashing on a screen, and the last message will be represented by audio. The morse code messages will placed around the room for the players to solve, as shown in the design below. 
+This escape room puzzle will contain four different morse code translation task, each represented differently. One message will be represented using dots and dashes printed on paper, one will be represented using light flashing on a screen, one will be text that needs to be translated into morse code, and the last message will be represented by audio. The morse code messages will placed around the room for the players to solve, as shown in the design below. 
 
 ![Alt text](PuzzleDesign.png?raw=true "Puzzle Design")
 
-To complete the puzzle the player must enter the correct answer on the device in the middle of the room. The morse code messages will lead the player to the answer. 
-
-For the prototype the three morse code messages will be random words generated on https://www.randomwordgenerator.com/. 
-
-The audio message is - key
-
-The light message is - tree
-
-The dots and dashes message is - break
-
-The audio and light messages are shorter because they will be harder to translate and I do not want the puzzle being too difficult for players.
+To complete the puzzle the player must enter the correct answers on the device in the middle of the room.
