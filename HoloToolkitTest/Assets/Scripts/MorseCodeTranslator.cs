@@ -5,14 +5,16 @@ using UnityEngine.UI;
 
 public class MorseCodeTranslator : MonoBehaviour {
 
-    string MorseLetter;
+    public string MorseLetter;
+    public string morseTextTranslation;
     char Letter;
     string Word;
-    private static Dictionary<char, string> morseCodeDictionary;
+    public static Dictionary<char, string> morseCodeDictionary;
     public Text morseText;
     private GameObject textIns;
     private GameObject[] UIobjects;
     public GameObject UItext;
+
 
 
     // Use this for initialization
@@ -37,32 +39,40 @@ public class MorseCodeTranslator : MonoBehaviour {
     public void NextWord()
     {
         morseText.text += " ";
+        morseTextTranslation += " ";
         MorseLetter = null;
     }
 
-
+    
     public void NextLetter()
     {
-        print(MorseLetter);
-        //MorseLetter = null; // resets letter
-        foreach(KeyValuePair<char, string> entry in morseCodeDictionary)
+        morseText.text = TranslateLetter(MorseLetter);
+    }
+
+    /* Translates Morse Code to Text */
+    public string TranslateLetter(string morseLetter)
+    {
+        // For each item in the morse code dictionary
+        foreach (KeyValuePair<char, string> entry in morseCodeDictionary)
         {
-            if (MorseLetter == entry.Value)
+            // check if the morse letter is equal to value in the dictionary
+            if (morseLetter == entry.Value)
             {
-                print(entry.Key);
-                morseText.text += entry.Key.ToString();
-                //DisplayText(UItext, Word);
+                // if morse letter is equal add the key (the translation of the morse code) to the morseTextTranslation
+                morseTextTranslation += entry.Key.ToString();
             }
-            // do something with entry.Value or entry.Key
         }
         MorseLetter = null;
+        return morseTextTranslation;
     }
 
     public void Clear()
     {
         morseText.text = null;
+        morseTextTranslation = null;
     }
 
+    /* Displays text to the UI canvas */
     public void DisplayText(GameObject prefab, string text)
     {
         textIns = Instantiate(prefab);
@@ -71,7 +81,7 @@ public class MorseCodeTranslator : MonoBehaviour {
         textIns.transform.localPosition = new Vector3(0.0f, 2.0f, 0.0f);
     }
 
-    private static void InitializeDictionary()
+    public void InitializeDictionary()
     {
         morseCodeDictionary = new Dictionary<char, string>()
                                    {

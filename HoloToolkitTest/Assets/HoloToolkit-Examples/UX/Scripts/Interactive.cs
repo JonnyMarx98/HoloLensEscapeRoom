@@ -287,17 +287,14 @@ namespace HoloToolkit.Examples.InteractiveElements
             }
             if (ParentObject.name == "NextLetterButton")
             {
-                //print("Done");
                 morseCodeTranslator.NextLetter();
             }
             if (ParentObject.name == "SpaceButton")
             {
-                //print("Done");
                 morseCodeTranslator.NextWord();
             }
             if (ParentObject.name == "ClearButton")
             {
-                //print("Done");
                 morseCodeTranslator.Clear();
             }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1508,7 +1508,7 @@ GameObject:
   - component: {fileID: 1173813633}
   - component: {fileID: 1173813635}
   m_Layer: 0
-  m_Name: MorseCode
+  m_Name: MorseGraph
   m_TagString: MorseCode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1633,6 +1633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644bd80e76b23d0498025564970dafc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MorseLetter: 
   morseText: {fileID: 0}
   UItext: {fileID: 0}
 --- !u!222 &1173813635
